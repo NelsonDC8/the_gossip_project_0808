@@ -24,7 +24,8 @@ Tag.destroy_all
 		description: Faker::Quote.most_interesting_man_in_the_world,
 		email: Faker::Internet.email,
 		age: Faker::Number.between(from: 15, to: 99),
-		city: City.all.sample)
+		city: City.all.sample,
+		password: Faker::Internet.password)
  end
 
  20.times do 		
